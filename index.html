@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Sorting_algos_visualizer</title>
+</head>
+<body>
+    <!-- <div class="nav-container">
+        <h2 class="title" onclick="window.location.reload()">
+          Sorting visualizer
+        </h2>
+        <div class="navbar" id="navbar">
+          <a id="random" onclick="RenderScreen()">Generate array</a>
+          <span class="options">
+            <select name="select sort algorithm" id="menu" class="algo-menu">
+              <option value="0">Choose algorithm</option>
+              <option value="1">Bubble Sort</option>
+              <option value="2">Selection Sort</option>
+              <option value="3">Insertion Sort</option>
+              <option value="4">Merge Sort</option>
+              <option value="5">Quick Sort</option>
+            </select>
+          </span>
+          <span class="options">
+            <select name="select array size" id="menu" class="size-menu">
+              <option value="0">Array size</option>
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option>
+              <option value="20">20</option>
+              <option value="30">30</option>
+              <option value="40">40</option>
+              <option value="50">50</option>
+              <option value="60">60</option>
+              <option value="70">70</option>
+              <option value="80">80</option>
+              <option value="90">90</option>
+              <option value="100">100</option>
+            </select>
+          </span>
+          <span class="options">
+            <select name="speed of visualization" id="menu" class="speed-menu">
+              <option value="0">Speed</option>
+              <option value="0.5">0.50x</option>
+              <option value="0.75">0.75x</option>
+              <option value="1">1.00x</option>
+              <option value="2">2.00x</option>
+              <option value="4">4.00x</option>
+            </select>
+          </span>
+          <a class="start">Sort</a>
+          <a class="icon"><i class="fa fa-bars"></i></a>
+        </div>
+      </div>
+      <div class="center">
+        <div class="array"></div>
+      </div> -->
+    <header>
+        <nav>
+            <div class="array-inputs">
+                <p>ARRAY SIZE</p>
+                <input id="a_size" type="range" min="4" max="150" step="5" value="80">
+                <p>SPEED</p>
+                <input id="a_speed" type="range" min="1" max="5" step="1" value="4">
+                <br>
+                <br>
+                <button id="a_generate">NEW ARRAY</button>
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">SORTING_ALGOS_VISUALIZER</p>
+                <div class="algos">
+                    <button style='margin-right:16px'>SELECTION</button>
+                    <button style='margin-right:16px'>BUBBLE</button>
+                    <button style='margin-right:16px'>INSERTION</button>
+                    <button style='margin-right:16px'>MERGE</button>
+                    <button style='margin-right:16px'>QUICK</button>
+                    <button>HEAP</button>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div>        </div>
+        
+        <div id="array_container">
+        </div>
+
+        <div>        </div>
+    </section>
+    <footer>
+        <p>Created with <i class="fa fa-heart"></i> by Nittin</p>
+        <p>
+          <a href="https://www.linkedin.com/in/nittin-kumar-866a98241" target="_blank" class="link">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/nkyadava15" target="_blank" class="link">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </p
+        <!-- <div class="footer">
+            <div class="made_by">
+                <p>Made by: Nittin Kumar</p>
+            </div>
+
+        </div> -->
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/visualizations.js"></script>
+    <script src="./scripts/Selections_sort.js"></script>
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/Insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/Quick_sort.js"></script>
+
+    
+</body>
+</html>
